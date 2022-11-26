@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+<meta charset="utf-8">
+<title>Menu - The Viennese Cafe</title>
+   
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap" rel="stylesheet">
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Ms+Madi&display=swap" rel="stylesheet">
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+   
+    <style>
+
+       body {
+           margin: 0px;
+           background-image: url("viennese-cafe-bg.png");
+           background-position: left;
+           background-attachment: fixed;
+           background-size: 1500px;
+           background-color: #7f7462;
+       }
+       header {
+           width: 100%;
+           background-image: url("viennese-cafe-header.png");
+           margin: 0px;
+       }
+
+       #cafe-logo {
+           width: 170px;
+       }
+
+       .center {
+           display: block;
+           margin-left: auto;
+           margin-right: auto;
+           width: 50%;
+       }
+
+       nav {
+           font-family: "Abril Fatface", cursive;
+       }
+
+       nav ul {
+           list-style-type: none;
+           width: 100%;
+           height: 42px;
+           margin: 0px;
+           background-color: #000000f1;
+           padding: 0px;
+       }
+
+       nav ul li {
+           display: inline;
+           float: left;
+       }
+
+       nav ul li a {
+           display: block;
+           padding-left: 60px;
+           padding-right: 60px;
+           padding-top: 10px;
+           padding-bottom: 10px;
+           text-decoration: none;
+           color:#dfe7ff;
+       }
+
+       nav ul li a:hover {
+           background-color: #ffede19d;
+           color:#040710;
+           transition: 0.5s;
+       }
+
+       section h2 {
+           font-family: 'Libre Baskerville', serif;
+           color:#e8e8ff;
+           padding-top: 30px;
+           padding-left: 80px;
+           margin: 0px;
+       }
+
+       section {
+        height: 24000px;
+       }
+
+       section aside {
+        width: 165px;
+       }
+
+       section aside nav {
+           height: 272px;
+           width: 165px;
+           display: block;
+       }
+
+       section aside nav ul {
+           list-style-type: none;
+           height: 272px;
+           position: fixed;
+           overflow: auto;
+           width: 165px;
+           background-color: #000000b6;
+           margin: 0px;
+           padding: 0px;
+       }
+
+       section aside nav ul li a {
+        color:#dfe7ff;
+           text-decoration: none;
+           padding-top: 20px;
+           padding-bottom: 20px;
+           display: block;
+           text-align: center;
+           width: 150px;
+       }
+
+       section h1 {
+           font-family: "Ms Madi", cursive;
+           color: #fdfcfc;
+           font-size: 60px;
+           padding-bottom: 40px;
+           border: 0px;
+           margin-left: 320px;
+           text-shadow: 2px 3px 3px gray;
+       }
+
+       section h2 {
+           font-family: "Ms Madi", cursive;
+           color: #fdfcfc;
+           font-size: 60px;
+           padding-bottom: 10px;
+           border: 0px;
+           margin-left: 320px;
+           text-shadow: 3px 3px 3px gray;
+       }
+
+       article {
+           padding-bottom: 40px;
+           width: 700px;
+           float: left;
+           margin-right: 500px;
+       }
+
+       article .heading{
+           font-family: "Ms Madi", cursive;
+           color:#141420;
+           padding-left: 100px;
+           padding-right: 100px;
+           padding-bottom: 10px;
+           padding-top: 60px;
+           margin: 0px;
+           text-align: center;
+           line-height: 1.5;
+           font-size: 45pt;
+           text-shadow: 2px 2px 3px gray;
+       }
+
+       article .food {
+           font-size: 14pt;
+           font-family: 'Libre Baskerville', serif;
+           color:#141420;
+           width: 700px;
+           margin-left: 300px;
+           line-height: 1.5;
+           text-indent: 20px;
+           padding-bottom: 20px;
+           font-size: 25pt;
+           text-shadow: 2px 2px 3px gray;
+       }
+
+       article .description {
+            font-family: 'Libre Baskerville', serif;
+            color:#141420;
+            margin-left: 300px;
+            width: 500px;
+            font-size: 15pt;
+            text-shadow: 2px 2px 3px gray;
+            padding-bottom: 80px;
+            text-indent: 20px;
+       }
+
+       article .price {
+            font-family: 'Libre Baskerville', serif;
+            margin-left: 300px;
+            color:#141420;
+            font-size: 20pt;
+            text-shadow: 2px 2px 3px gray;
+       }
+
+       .food-pic {
+           margin-left: 600px;
+           width: 400px;
+           box-shadow: 3px 3px 3px gray;
+           border-radius: 5%;
+       }
+
+       footer {
+           height: 70px;
+           width: 100%;
+           background-color: #000000fa;
+           font-family: 'Libre Baskerville', serif;
+           color:#dfe7ff;
+           margin: 0px;
+           text-align: center;
+           padding: 20px;
+       }
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+       <a href="index.html"><img src="viennese-cafe-logo.png" alt="Viennese Cafe Logo" class="center" id="cafe-logo"></a>
+    </header>
+
+    <nav>
+       <ul>
+           <li><a href="index.html">Home</a></li>
+           <li><a href="viennese-cafe-menu">Menu</a></li>
+           <li><a href="about-viennese-cafe.html">About</a></li>
+           <li><a href="viennese-cafe-contact-page.html">Contact Us</a></li>
+       </ul>
+    </nav>
+
+
+
+    <section>
+
+        <aside>
+            <nav>
+                <ul>
+                    <li id="food"><a href="#food-me">Food Menu</a></li>
+                    <li class="categories"><a href="#austri-des">Austrian Desserts</a></li>
+                    <li class="categories"><a href="#fr-pastr">French Pastries</a></li>
+                    <li class="categories"><a href="#drinks">Drinks</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <h1>Viennese Cafe's Signature Menu</h1>
+
+       <article>
+        <h2>Food Menu</h2>
+
+           <p id="austri-des" class="heading">Austrian Desserts</p>
+           <p class="food">Topfenstrudel</p>
+            <img src="https://www.graz.net/wp-content/uploads/2020/12/topfenstrudel.jpg" alt="Topfenstrudel" class="center food-pic">
+                <p class="price">Php 160 (per serving)</p>
+                <p class="description">
+                    A baked dessert composed of sweetened quark cheese folded
+                    in puff pastry. It is then topped with rasperries to balance out the flavors.
+                </p>
+           
+            <p class="food">Salzburger Nockerl</p>
+            <img src="https://www.sbs.com.au/food/sites/sbs.com.au.food/files/fluffy-egg-souffle-2.jpg" alt="Salzburger Nockerl" class="center food-pic">
+                <p class="price">Php 140 (per serving)</p>
+                <p class="description">
+                    Considered as "vanilla-flavored dumplings", the Salzburger Nockerl is Knowing
+                    for being a souffle-like pastry. Powdered sugar is then dusted on top of it for extra sweetness.
+                    It was named after the city of Salzburg, where it originated from.
+                </p>
+           
+            <p class="food">Linzer Torte</p>
+            <img src="https://hostessatheart.com/wp-content/uploads/2016/10/Raspberry-Linzer-Torte-1.jpg" alt="Linzer Torte" class="center food-pic">
+                <p class="price">Php 180 (per slice)</p>
+                <p class="description">
+                    A dessert named after the city of Linz. It is a pie-like pastry
+                    with a buttery crust that is brought out with lemon juice, cinnamon, and hazelnuts.
+                    The filling for ours is rasperry jam, deviating from the usual redcurrant jam.
+                </p>
+           
+           <p class="food">Mozartkugel</p>
+           <img src="https://www.daringgourmet.com/wp-content/uploads/2015/11/Mozartkugeln-7-edited.jpg" alt="Mozartkugel" class="center food-pic">
+                <p class="price">Php 100 (for 5 pieces)</p>
+                <p class="description">
+                    As a type of chocolate confection named after a certain composer,
+                    Mozartkugel was dedicated to Mozart. It is made of a pistachio-flavored marzipan ball 
+                    coated in nougat, then finished off with a thick layer of dark chocolate.
+                </p>
+
+           <p class="food">Vanillekipferl</p>
+           <img src="https://img.chefkoch-cdn.de/rezepte/403911129675192/bilder/1352687/crop-960x720/uromas-vanillekipferl.jpg" alt="Vanillekipferl" class="center food-pic">
+                <p class="price">Php 120 (for 6 pieces)</p>
+                <p class="description">
+                    These are crescent-shaped vanilla cookies dusted with powdered sugar
+                    containing walnuts. They were made after Austria's victory after a war against Turkey. 
+                </p>
+
+           <p class="food">Kaiserschmarrn</p>
+           <img src="https://www.daringgourmet.com/wp-content/uploads/2022/01/Kaiserschmarrn-5.jpg" alt="Kaiserschmarrn" class="center food-pic">
+                <p class="price">Php 110 (per serving)</p>
+                <p class="description">
+                    Also known as "The Emperor's Mess", Kaiserschmarrn was named after the
+                    Emperor Kaiser Franz Joseph, for it was his favorite dessert. It consists of scrambled pancakes,
+                    berry preserve, and a dusting of powdered sugar.
+                </p>
+
+           <p class="food">Apfelstrudel</p>
+           <img src="https://www.oetker.at/Recipe/Recipes/oetker.at/at-de/baking/image-thumb__148784__RecipeDetailsLightBox/apfelstrudel-aus-selbst-gemachtem-strudelteig.jpg" alt="Apfelstrudel" class="center food-pic">
+                <p class="price">Php 140 (per serving)</p>
+                <p class="description">
+                    One of Austria's most famous desserts, the Apfelstrudel
+                    is a puff pastry filled with apple filling. Like an apple pie of some sort,
+                    but with raisins.
+                </p>
+
+           <p class="food">Krapfen</p>
+           <img src="https://www.oetker.at/Recipe/Recipes/oetker.at/at-de/baking/image-thumb__153625__RecipeDetailsLightBox/krapfen.jpg" alt="Krapfen" class="center food-pic">
+                <p class="price">Php 120 (For three)</p>
+                <p class="description">
+                    A European-style donut filled with jam and topped with powdered sugar.
+                    It is best paired with good old plain coffee.
+                </p>
+
+           <p class="food">Cremeschnitte</p>
+           <img src="https://realfood.tesco.com/media/images/RaspberryCremeschnitte-LGH-mini-9f2c763c-0724-4fce-9632-965e842cc98e-0-1400x919.jpg" alt="Cremeschnitte" class="center food-pic">
+                <p class="price">Php 200</p>
+                <p class="description">
+                    A puff pastry dessert filled with a thick layer of custard topped with 
+                    raspberries for extra flair.</p>
+
+           <p class="food">Sachertorte</p>
+           <img src="https://www.sacher.com/en/wp-content/uploads/sites/4/2019/08/SacherTorte_Teaser_klein.jpg" alt="Sachertorte" class="center food-pic">
+                <p class="price">Php 170 (per slice)</p>
+                <p class="description">
+                    A famous Austrian chocolate cake with chocolate cake layers coated with
+                    a thin layer of apricot jam, frosted with chocolate icing, then served with a generous dollop of
+                    whipped cream on the side.
+                </p>
+
+           <p class="food">Marillenkuchen</p>
+           <img src="https://www.mehlspeiskultur.at/fileadmin/_processed_/3/b/csm_shutterstock_140812153_Marillenkuchen_65ad6da165.jpg" alt="Marillenkuchen" class="center food-pic">
+                <p class="price">Php 190 (per slice)</p>
+                <p class="description">
+                    A light lemon-flavored sponge cake with embedded apricots in the center of it,
+                    lightly dusted with powdered sugar.</p>
+
+           <p class="food">Gugelhupf</p>
+           <img src="https://images.immediate.co.uk/production/volatile/sites/30/2021/01/Gugelhupf-9a3c1a8.jpg" alt="Gugelhupf" class="center food-pic">
+                <p class="price">Php 120 (per slice)</p>
+                <p class="description">
+                    Known as the "Bundt Cake" in English, it is famous for its donut shape.
+                    The shape makes it bake more evenly in the oven, making it a moist cake even without frosting to
+                    fill it.
+                </p>
+
+           <p class="food">Palatschinken</p>
+           <img src="https://files.cleverleben.at/clever_downloads/recipes/Recipe_585.jpg" alt="Palatschinken" class="center food-pic">
+                <p class="price">Php 100 </p>
+                <p class="description">
+                    The Austrian rendition of the French crepe, but slightly thicker. It is filled with
+                    apple cinnamon, has a side of strawberries, and is dusted with powdered sugar.
+                </p>
+
+           <p class="food">Topfenknodel</p>
+           <img src="http://muffinville.weebly.com/uploads/5/8/0/3/58033999/published/topfenkn-del-007.jpg?1613304138" alt="Topfenknodel" class="center food-pic">
+                <p class="price">Php 200 (for 10 pieces)</p>
+                <p class="description">
+                    A savory dumpling-like dessert dubbed as "Austrian curd dumplings".
+                    Its taste is similar to that of a donut and is served with raspberries on the side.
+                </p>
+
+           
+           <p id="fr-pastr" class="heading">French Pastries</p>
+           
+           <p class="food">Choux au Craquelin</p>
+           <img src="https://takestwoeggs.com/wp-content/uploads/2021/09/Vanilla-Cream-Puffs-Choux-Au-Craquelin-TakesTwoEggs-Final-SQ.jpg" alt="Choux au Craquelin" class="center food-pic">
+                <p class="price">Php 200 (for 5 pieces)</p>
+                <p class="description">
+                    A French Choux pastry with a cookie layer called a "Craquelin" on top.
+                    It is filled with diplomat cream and is served cold. 
+                </p>
+
+           <p class="food">Croissant</p>
+           <img src="https://cdn.britannica.com/65/235965-050-A5D740E2/Croissants-jar-of-jam.jpg" alt="Croissant" class="center food-pic">
+                <p class="price">Php 150 (per piece)</p>
+                <p class="description">
+                    A buttery pastry with several layers of flakey dough shaped into
+                    a crescent.
+                </p>
+
+           <p class="food">Chouquette</p>
+           <img src="https://cnz.to/wp-content/uploads/2003/10/chouquettes2.jpg" alt="Chouquette" class="center food-pic">
+                <p class="price">Php 150 (for 10 pieces)</p>
+                <p class="description">
+                    Bite-sized treats made out of Choux pastry with pearl sugar studs on the exterior
+                    of its shell.
+                </p>
+
+           <p class="food">Mille Feuille</p>
+           <img src="https://i0.wp.com/baketotheroots.de/wp-content/uploads/2017/08/HK_170722_MilleFeuille5.jpg?ssl=1" alt="Mille Feuille" class="center food-pic">
+                <p class="price">Php 220</p>
+                <p class="description">
+                    A pastry named after Napoleon and has "a thousand layers" due to the fact that it is made of 
+                    puff pastry. It is then filled with pastry cream and strawberries sandwiched inbetween.
+                </p>
+
+           <p class="food">Paris-Brest</p>
+           <img src="https://thescranline.com/wp-content/uploads/2022/03/Paris-Brest-WEB-01.jpg" alt="Paris-Brest" class="center food-pic">
+                <p class="price">Php 240</p>
+                <p class="description">
+                    A dessert comprised of a ring of piped Choux pastry cut in half,
+                    filled with Praline Creme Mousseline, studded with almonds on the shell, and then covered
+                    with a light dusting of powdered sugar.
+                </p>
+
+           <p class="food">Pain au Chocolat</p>
+           <img src="https://assets.afcdn.com/recipe/20181107/83668_w1024h768c1cx2880cy1920.jpg" alt="Pain au Chocolat" class="center food-pic">
+                <p class="price">Php 170 (per piece)</p>
+                <p class="description">
+                    A dessert made with the same dough as croissants, but is generously filled
+                    with melted sticks of chocolate.
+                </p>
+
+           <p class="food">Beignets</p>
+           <img src="https://preppykitchen.com/wp-content/uploads/2021/02/Beignets-Recipe-preppy-kitchen.jpg" alt="Beignets" class="center food-pic">
+                <p class="price">Php 150 (for 12 pieces)</p>
+                <p class="description">
+                    A type of fritter made of Choux pastry, shaped into pillows and dusted with
+                    powdered sugar.
+                </p>
+
+           <p class="food">Profiteroles</p>
+           <img src="https://zoebakes.com/wp-content/uploads/2018/04/GF-profiteroles-2.jpg" alt="Profiteroles" class="center food-pic">
+                <p class="price">Php 210 (for 7 pieces)</p>
+                <p class="description">
+                    Similar to cream puffs, but filled with ice cream instead. Profiteroles
+                    are another type of Choux dessert filled with ice cream then coated with a thin layer of chocolate
+                    ganache.
+                </p>
+
+           <p class="food">Eclair</p>
+           <img src="https://www.cookingwithnanaling.com/wp-content/uploads/2021/11/chocolate-eclairs-3.jpg" alt="Eclair" class="center food-pic">
+                <p class="price">Php 120 (per serving)</p>
+                <p class="description">
+                    Another Choux dessert, but piped into a line rather than a dome. It is filled with diplomat cream
+                    and covered in a layer of chocolate ganache
+                </p>
+
+           
+           <p id="drinks" class="heading">Drinks</p>
+           
+           <p class="food">Hot Chocolate</p>
+           <img src="https://i0.wp.com/tarasmulticulturaltable.com/wp-content/uploads/2020/06/Einsp%C3%A4nner-Viennese-Coffee-with-Whipped-Cream-3-of-3.jpg?resize=768%2C512&ssl=1" alt="Hot Chocolate" class="center food-pic">
+                <p class="price">Php 80</p>
+                <p class="description">
+                    Thick and rich Viennese-style  Hot Chocolate with whipped cream and sprinkled with chocolate shavings
+                </p>
+
+           <p class="food">Gluhwein</p>
+           <img src="https://www.millennium-bartending.de/storage/2019/11/selbst-gemachte-jagertee.jpg" alt="Gluhwein" class="center food-pic">
+                <p class="price">Php 100</p>
+                <p class="description">
+                    A type of alcoholic beverage with red wine, infused with lemon zest, and flavored with star anise, cinnamon,
+                    and clove.
+                </p>
+
+           <p class="food">Einspannler</p>
+           <img src="https://i.lezzet.com.tr/images-xxlarge-secondary/einspanner-kahve-nedir-nasil-yapilir-dfc3e982-2f41-4f53-8974-d8828df77c2e.jpg" alt="Einspanner" class="center food-pic">
+                <p class="price">Php 90</p>
+                <p class="description">
+                    A Viennese-style coffee composed of espresso and topped with copious amounts of whipped cream.
+                    It is then served in a tall glass, but don't stir it no matter how tempting it is!
+                </p>
+
+           <p class="food">Weiner Melange</p>
+           <img src="https://c.wallhere.com/photos/5d/2b/wood_white_color_detail_cup_coffee_table_saturated-888884.jpg!d" alt="Weiner Melange" class="center food-pic">
+                <p class="price">Php 70</p>
+                <p class="description">
+                    A Viennese coffee drink made of a blend of espresso shots, milk, and milk foam. It is pretty similar
+                    to a latte, but with a fancier name and chocolate sprinkled on top.
+                </p>
+
+           <p class="food">Affogato</p>
+           <img src="https://www.thespruceeats.com/thmb/5PcCBEaUd1U1eFxfcKKPLVnZzfA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/affogato-4776668-hero-08-40d7a68d12ba46f48eaea3c43aba715c.jpg" alt="Affogato" class="center food-pic">
+                <p class="price">Php 100</p>
+                <p class="description">
+                    An Italian coffee drink comprising of coffee an a few scoops of plain vanilla
+                    gelato. It is then garnished with chocolate sprinkles.
+                </p>
+
+           <p class="food">Doppio</p>
+           <img src="https://i.pinimg.com/originals/8a/90/7a/8a907a475ec6c740a601df7e820cc16c.jpg" alt="Doppio" class="center food-pic">
+                <p class="price">Php 70</p>
+                <p class="description">
+                    A bitter double-shot espresso for the saddest of hearts.
+                </p>
+
+           <p class="food">Caffe Macchiato</p>
+           <img src="https://www.acouplecooks.com/wp-content/uploads/2020/10/how-to-make-a-macchiato-008.jpg" alt="Caffe Macchiato" class="center food-pic">
+                <p class="price">Php 80</p>
+                <p class="description">
+                    A shot of espresso delicately topped with a small amount of foamed milk.
+                </p>
+
+           <p class="food">Cafe Con Leche</p>
+           <img src="http://blogs.getty.edu/iris/files/2016/01/latte_heart.jpg?x45884" alt="Cafe Con Leche" class="center food-pic">
+                <p class="price">Php 80</p>
+                <p class="description">
+                    A latte, made with equal parts espresso and frothed milk. It is famous for its use in latte art.
+                </p>
+
+
+       </article>
+
+    </section>
+
+    <footer>
+       <h4>&copy; 2022 Viennese Cafe</h4>
+    </footer>
+</body>
+</html>
